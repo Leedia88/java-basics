@@ -59,7 +59,7 @@ const entrepreneurs = [
     { first: 'Travis', last: 'Kalanick', year: 1976 },
     { first: 'Marc', last: 'Andreessen', year: 1971 },
     { first: 'Peter', last: 'Thiel', year: 1967 }
-  ];
+];
 
 //   Filtre dans cette liste les entrepreneurs qui sont nés dans les années 70 ;
 // let entrepreneursSeventies = [];
@@ -118,7 +118,7 @@ const books = [
     { title: 'La lune seule le sait', id: 63541, rented: 43 },
     { title: 'Voyage au centre de la Terre', id: 4656388, rented: 38 },
     { title: 'Guerre et Paix', id: 748147, rented: 19 }
-  ];
+];
 
 // console.log("Est-ce que tous les livres ont été au moins empruntés une fois ?");
 // let answer = true;
@@ -168,3 +168,51 @@ const books = [
 
 //Exercice 4.1
 
+// function acide(string) {
+//     switch (string) {
+//         case "UCU": case "UCC": case "UCA": case "UCG": case "AGU": case "AGC":
+//             return "Sérine";
+//         case "CCU": case "CCC": case "CCA": case "CCG":
+//             return "Proline";
+//         case "UUA": case "UUG":
+//             return "Leucine";
+//         case "UUU": case "UUC":
+//             return "Phénylalanine";
+//         case "CGU": case "CGC": case "CGA": case "CGG": case "AGA": case "AGG":
+//             return "Arginine";
+//         case "UAU": case "UAC":
+//             return "Tyrosine";
+//     }
+// }
+
+// function arn(string){
+//     let liste = [];
+//     for(let i=1; i<string.length; i+=3){
+//         liste.push(string.substr(i-1, 3));
+//     }
+//     for(let i in liste){
+//         liste[i] = acide(liste[i]);
+//     };
+//     return liste;
+// }
+// console.log(arn("CCGUCGUUGCGCUACAGC"))
+// console.log(arn("CCUCGCCGGUACUUCUCG"))
+
+//Exercie 4.2
+// function answer(string){
+//     switch (true){
+//         case string[string.length -1] == "?":
+//             console.log("Ouais, ouais..."); break;
+//         case string.toUpperCase() == string:
+//             console.log("Pwa, calme-toi..."); break;
+//         case string.includes("Fortnite"):
+//             console.log("on s' fait une partie soum-soum ?"); break;
+//         case string == "":
+//             console.log("t'es en PLS?"); break;
+//         default:
+//             console.log("balek"); break;
+//     }
+// }
+
+// let phrase = prompt();
+// answer(phrase);
