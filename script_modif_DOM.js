@@ -68,15 +68,14 @@ changeCardsText();
 
 // Modification n°7
 function changeViewButtons(){
-    htmlElements = document.querySelectorAll("div.btn-group");
-    for(let i in htmlElements){
-        console.log(i);
-        console.log(htmlElements[i].firstElementChild);
-        // htmlElements[i].firstElementChild.
-        // classList.replace("btn-outline-secondary", "btn-success");
+    htmlElements = document.getElementsByClassName("btn-group");
+    for(let i = 0; i < htmlElements.length; i++){
+        console.log(htmlElements[i])
+        let child = htmlElements[i].children[0];
+        child.classList.replace("btn-outline-secondary", "btn-success");
     }
 }
-// changeViewButtons();
+changeViewButtons();
 
 // Modification n°8
 let container = document.getElementsByClassName("container");
@@ -85,3 +84,5 @@ elt.className = "row";
 container[3].appendChild(elt);
 htmlElements = document.getElementsByClassName("card");
 elt.appendChild(htmlElements[2]);
+
+
