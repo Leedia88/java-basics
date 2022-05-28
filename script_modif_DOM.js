@@ -70,7 +70,6 @@ changeCardsText();
 function changeViewButtons(){
     htmlElements = document.getElementsByClassName("btn-group");
     for(let i = 0; i < htmlElements.length; i++){
-        console.log(htmlElements[i])
         let child = htmlElements[i].children[0];
         child.classList.replace("btn-outline-secondary", "btn-success");
     }
